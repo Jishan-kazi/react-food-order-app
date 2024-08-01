@@ -15,7 +15,7 @@ const config = {
 };
 
 export default function Checkout() {
-    const { data, isLoading, error, sendHttpRequest, clearData } = useHttp('http://localhost:3000/orders', config);
+    const { data, isLoading, error, sendHttpRequest, clearData } = useHttp('https://react-food-order-app-879e0.web.app/orders', config);
     const cartItems = useSelector((state) => state.cart.items);
     const showModal = useSelector((state) => state.cart.showModal);
     const dispatch = useDispatch();
