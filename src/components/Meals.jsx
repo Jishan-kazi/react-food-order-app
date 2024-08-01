@@ -4,7 +4,7 @@ import Error from "./Error.jsx";
 
 const config = {};
 export default function Meals() {
-    const {data: meals, isLoading, error} = useHttp('http://localhost:3000/meals', config, []);
+    const {data: meals, isLoading, error} = useHttp('https://react-food-order-app-879e0.web.app/meals', config, []);
 
     if (isLoading) {
         return <p className="center">Fetching meals...</p>
