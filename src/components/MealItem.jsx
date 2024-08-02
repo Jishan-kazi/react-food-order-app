@@ -11,7 +11,7 @@ export default function MealItem({meal}) {
 
     return <li className="meal-item">
         <article>
-            <img className="" src={`http://localhost:3000/${meal.image}`} alt={meal.name} />
+            <img className="" src={`https://react-food-order-app-front.onrender.com/${meal.image}`} alt={meal.name} />
             <div>
                 <h3>{meal.name}</h3>
                 <p className="meal-item-price">{currencyFormatter.format(meal.price)}</p>
